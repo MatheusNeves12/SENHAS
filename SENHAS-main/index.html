@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
+        </div>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropia"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
+<!-- <!DOCTYPE html> Declara que o documento segue o padrão HTML5. Ajuda o navegador a interpretar corretamente o conteúdo.-->
+<!-- <html lang="pt-br"> Indica o início do documento HTML e define o idioma principal como português do Brasil.-->
+<!-- <head> Abriga informações que não aparecem diretamente na página, mas são importantes para o funcionamento e estrutura dela.-->
+<!-- <meta charset="UTF-8"> Define o conjunto de caracteres para garantir a exibição correta de acentos e símbolos.-->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> Controla como a página será exibida em dispositivos móveis, tornando-a responsiva.-->
+<!-- <title> Define o nome da aba do navegador, ou seja, o título da página.-->
+<!-- <link rel="stylesheet" href="style.css"> Conecta o documento HTML com um arquivo de estilo externo.-->
+<!-- <body> Marca o início da parte visível do conteúdo que será exibido ao usuário.-->
+<!-- <section> Organiza um bloco de conteúdo com função específica, geralmente relacionado a um mesmo tema.-->
+<!-- <div> Cria divisões genéricas para estruturar elementos na página.-->
+<!-- <h2> Apresenta um subtítulo com destaque, menor que o principal.-->
+<!-- <h3> Usado para subtítulos ou seções de menor importância hierárquica que o anterior.-->
+<!-- <label> Relaciona um texto descritivo a um campo de formulário, facilitando o uso e a acessibilidade.-->
+<!-- <input> Campo interativo onde o usuário pode inserir ou visualizar dados.-->
+<!-- <h4> Cria um título ainda mais específico dentro de uma seção, com menor destaque que os anteriores.-->
+<!-- <button> Gera um botão clicável que executa ações, como eventos JavaScript.-->
+<!-- <p> Define um parágrafo de texto.-->
+<!-- <script src="main.js"> Importa um arquivo JavaScript externo, responsável pela lógica da página.-->
+<!-- </html> Marca o fim do documento HTML.-->
