@@ -154,5 +154,57 @@ label {
         flex-direction: row;
     }
 }
-/* :root 
-Essa é tipo a "raiz" do documento. É onde você define variáveis globais que podem ser reutilizadas em qualquer parte do CSS. Está sendo usada pra guardar cores, fontes, etc./*
+/* :root
+Essa é tipo a "raiz" do documento. É onde você define variáveis globais que podem ser reutilizadas em qualquer parte do CSS. Está sendo usada pra guardar cores, fontes, etc.*/
+/* *
+Esse é o seletor universal. Ele seleciona todos os elementos da página. Geralmente é usado pra aplicar estilos padrão, tipo resetar margens ou, como aqui, definir um peso de fonte pra tudo.*/
+/* body
+Seleciona o corpo do HTML — ou seja, toda a área visível da sua página. Tudo que você coloca dentro do HTML vai aparecer dentro do body.*/
+/* .titulo-principal
+É uma classe, usada pra marcar um título mais importante ou o título principal da página.*/
+/* .titulo-secundario
+Outra classe, usada pra títulos menores, tipo subtítulos ou seções secundárias.*/
+/* .conteudo-titulo
+Essa classe esta controlando a parte do layout do título: alinhamento, margens etc. Ou seja, ela estiliza o container onde o título está.*/
+/* .conteudo-senha
+Essa classe organiza o fundo, borda, espaçamento e tudo mais desse pedaço específico.*/
+/* #campo-senha
+Esse é um ID, então é único, só podendo existir um com esse nome por página.*/
+/* #campo-senha:focus
+Esse é o mesmo campo acima, mas quando o usuário clica ou foca nele (tipo quando clica pra digitar). É um seletor de estado.*/
+/* .conteudo
+Classe que normalmente organiza o layout geral da página ou de um grande bloco. Aqui esta centralizando tudo e limitando a largura.*/
+/* .parametro
+Esse é um container usado pra agrupar um conjunto de elementos — tipo opções de configuração da senha.*/
+/* parametro-titulo
+É o texto que provavelmente diz o que aquele bloco faz.*/
+/* .parametro-senha__titulo
+Tem dois underlines — é uma convenção chamada BEM pra deixar os nomes mais organizados.*/
+/* .parametro-coluna__senha
+Classe usada pra montar uma coluna ou layout em coluna dentro do bloco de senha. Aqui está ajudando a alinhar elementos verticalmente (ou horizontalmente, com media query).*/
+/* .parametro-senha
+Mais um container, agora focado nos elementos relacionados à senha. Pode conter sliders, botões, opções...*/
+/* .parametro-senha-botoes
+Bloco onde ficam os botões que controlam a senha, ele organiza o layout desses botões.*/
+/* .parametro-senha__botao
+Classe usada para estilizar os próprios botões — cor, fonte, borda, etc.*/
+/* .parametro-senha__texto
+Essa classe é usada num parágrafo ou texto descritivo, estando com borda e padding definidos.*/
+/* label
+É uma tag HTML mesmo, usada pra descrever inputs. No CSS aqui, está só estilizando o tamanho da fonte dos textos que aparecem com checkboxes ou campos.*/
+/* .checkbox
+Classe atribuída a inputs do tipo checkbox (as caixinhas de seleção). Aqui, o estilo está deixando ela maior e com o cursor em forma de mãozinha (pointer).*/
+/* .barra
+É uma barra de fundo que representa a força da senha. É tipo um container da barra de progresso.*/
+/* .forca
+A parte da barra que realmente cresce conforme a força da senha.*/
+/* .fraca
+Quando a senha é fraca, essa classe é aplicada. A barra aparece com uma largura pequena e cor vermelha.*/
+/* .media
+Quando a senha é mediana, essa classe é aplicada. A barra cresce mais e muda de cor.*/
+/* .forte
+Quando a senha é forte. A barra se estica até o fim e fica verde.*/
+/* .parametro-senha-textos
+Outro container de layout, alinhando os textos explicativos sobre a senha.*/
+/* @media screen and (min-width: 768px)
+Esse é um media query, ou seja, uma regra que só vale em telas maiores que 768px. Aqui ele ajusta o layout das colunas pra exibir lado a lado em telas maiores (tipo tablet e desktop).*/
